@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body, html{
+    background: linear-gradient(to top right,#0D2512, #498A58) fixed;  
+    height: 100vh;
+    overflow-x: hidden;
+    color: white;
+    position: relative;
+}
+header{
+    display: flex;
+    align-items: center;
+    margin: 10px 110px;
+    font-family: 'Poppins', sans-serif;
+}
+ul, .desaparecer{
+    list-style: none;
+    display: flex;
+    column-gap: 46px;
+    margin-left: auto;
+}
+#menu{
+    display: none;
+}
+li>a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+li>a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+.logos{
+    display: flex;
+    flex-direction: column;
+}
+.logos>a>svg{
+    margin-bottom: 20px;
+}
+.logos>a>svg:hover{
+    transition: 0.5s;
+    transform: translateY(-10px);
+}
+.texts{
+    max-width: 500px;
+}
+.texts>p{
+     font-family: 'Poppins', sans-serif;
+}
+#especial2{
+    margin-bottom: 60px;
+}
+.especial{
+    font-weight: bold;
+    font-size: 18px;
+}
+.texts>h1{
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 60px;
+}
+.texts>a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-right: 20px;
+}
+#a1{
+    background-color: #448150;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+#a2{
+    border: 1px solid white;
+    padding: 20px 30px;
+    border-radius: 30px;
+}
+#a2:hover{
+    transition: 0.5s;
+    background-color: #448150;
+    border-color: transparent;
+}
+main{
+    display: flex;
+    align-items: center;
+    column-gap: 132px;
+    margin-left: 150px;
+}
+main>img{
+    margin-top: 80px;
+}
+@media(max-width:1664px){
+    .texts>h1{
+        font-size: 50px;
+    }
+    #a1, #a2{
+        font-size: 14px;
+    }
+    #a2{
+        padding: 5px 10px;
+    }
+    main{
+        margin-left: 30px;
+    }
+    img{
+        width: 700px;
+    }
+}
+@media(max-width:1372px){
+    body{
+        margin: 0;
+    }
+    header{
+        margin: 10px 15px;
+    }
+    header>h1{
+        font-size: 25px;
+    }
+    main{
+        flex-direction: column;
+        margin: 30px 10px;
+    }
+    .texts{
+        width: 350px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .desaparecer{
+        display: none;
+    }
+    .logos{
+        display: none;
+    }
+    #menu{
+        display: block;
+        
+    }
+    img{
+        width: 450px;
+    }
+    
+}
